@@ -74,14 +74,14 @@ The ST-001 is a programmable **multi-coin acceptor** designed to be maker-friend
 
 - Raspberry Pi (any model with a GPIO header — Pi 1 through Pi 5, Zero included)
 - Sintron ST-001 set to **serial mode**
-- DC power supply for the acceptor (per the label on your unit)
+- DC 12 V power supply for the acceptor (~60 mA idle, 350 mA peak — any 12 V / 0.5 A adapter is plenty)
 - 3 jumper wires
 
 ### Wiring
 
 ```
-   DC supply (+) ─────────►  ST-001  DC IN +
-   DC supply (–) ────┬────►  ST-001  GND
+   DC 12 V (+) ───────────►  ST-001  DC IN +
+   DC 12 V (–) ──────┬────►  ST-001  GND
                      │
                      └────►  Pi GND          (physical pin 6)
    ST-001  SERIAL TX ─────►  Pi RXD / GPIO15 (physical pin 10)
@@ -90,7 +90,7 @@ The ST-001 is a programmable **multi-coin acceptor** designed to be maker-friend
 Two rules that cover 90% of wiring problems:
 
 1. **Common ground** — the acceptor's GND and the Pi's GND must be connected.
-2. **Level check** — the Pi's RX pin is **3.3 V**. If your acceptor's TX output is 5 V, drop it with a simple voltage divider (e.g. 1 kΩ / 2 kΩ) or a level shifter.
+2. **Voltage levels** — the ST-001's serial TX is 3.3 V, matching the Pi's RX. Wire it straight through — no level shifter needed.
 
 ### One-time Pi setup: free the serial port
 
