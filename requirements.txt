@@ -1,0 +1,8 @@
+# Demo mode (any Mac / PC / Linux): Python standard library only.
+# Nothing to install.
+#
+# Real coins on a Raspberry Pi with the Sintron ST-001 need pyserial:
+#   sudo apt install python3-serial      (recommended on Raspberry Pi OS)
+#   or: pip3 install pyserial
+#
+# pyserial>=3.5
