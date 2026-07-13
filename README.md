@@ -62,8 +62,9 @@ The ST-001 is a programmable **multi-coin acceptor** designed to be maker-friend
 - **Reports, not just pulses** — in serial mode every coin arrives as one clean, human-readable line with the value *you* programmed
 - **Trivial to integrate** — 115200 baud UART; works with Raspberry Pi, Arduino, ESP32, or anything with a serial port; parsing is a one-line regex
 - **Real-machine grade** — the same acceptor used in arcade, vending, laundry and kiosk builds
+- 
 > **Coming from a CH-926?** Same class of multi-coin acceptor you've seen in maker tutorials for years — but the CH-926 only outputs pulses. The ST-001 adds a **serial mode**: instead of counting pulses (and occasionally miscounting), every coin arrives as one clean text line with its programmed value. Pulse mode is still there if you want drop-in compatibility.
-> 
+
 **Get one:**
 - 🛒 Amazon (US): [amazon.com/dp/B0FL19CS85](https://www.amazon.com/dp/B0FL19CS85/)
 - 🌏 Direct: [sintron-hk.com](https://www.sintron-hk.com)
